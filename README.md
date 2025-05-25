@@ -12,10 +12,10 @@ This repository contains:
 
 | File | Purpose |
 |------|---------|
-| **`Botium-Toys-Scope-goals-and-risk-assessment-report.docx`** | Audit scope, goals, assets, and initial risk assessment |
-| **`Control-categories.docx`** | Reference of security control domains |
-| **`Controls-and-compliance-checklist.docx`** | Blank checklist template |
-| **`Internal_Security_Audit_Botium_Toys.docx`** | Full narrative of this project (scenario, findings, answers) |
+| [**Botium-Toys-Scope-goals-and-risk-assessment-report.docx**](./Botium-Toys-Scope-goals-and-risk-assessment-report.docx) | Audit scope, goals, assets, and initial risk assessment |
+| [**Control-categories.docx**](./Control-categories.docx) | Reference of security control domains |
+| [**Controls-and-compliance-checklist.docx**](./Controls-and-compliance-checklist.docx) | Blank checklist template |
+| [**Internal_Security_Audit_Botium_Toys.docx**](./Internal_Security_Audit_Botium_Toys.docx) | Full narrative of this project |
 
 Everything is also reproduced below for quick reading.
 
@@ -112,12 +112,4 @@ Everything is also reproduced below for quick reading.
 
 ## 7&nbsp;&nbsp;Using This Project
 
-- **Download** the `.docx` reports for detailed narrative and template versions.  
-- **Fork** this repo to practice filling out the checklist yourself.  
-- **Share** in your portfolio to showcase audit and compliance skills.
-
----
-
-## 8&nbsp;&nbsp;License
-
-This repository is provided for educational and professional-portfolio purposes only.
+- **Do**
