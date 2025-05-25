@@ -112,4 +112,12 @@ Everything is also reproduced below for quick reading.
 
 ## 7&nbsp;&nbsp;Using This Project
 
-- **Do**
+- **Download** the `.docx` reports above for detailed narrative and editable templates.  
+- **Fork** this repo to practice filling out the checklist yourself.  
+- **Share** in your portfolio to showcase audit and compliance skills.
+
+---
+
+## 8&nbsp;&nbsp;License
+
+This repository is provided for educational and professional-portfolio purposes only.
