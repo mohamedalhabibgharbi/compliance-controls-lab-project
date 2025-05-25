@@ -1,102 +1,141 @@
-# 📋 Controls & Compliance Checklist Assessment
-
-> **Project from Google Cybersecurity Professional Certificate**
-
-This project involves evaluating cybersecurity controls and compliance practices for a fictional company, **Botium Toys**. The assessment identifies gaps and provides actionable recommendations to enhance security and align with industry standards.
+# 🎯 Botium Toys – Internal Security Audit  
+*A Cybersecurity Portfolio Project (Google Cybersecurity Professional Certificate)*
 
 ---
 
-## 🧪 Exercise Summary
+## 1  Activity Overview  
 
-To complete the controls assessment checklist, information from the scope, goals, and risk assessment report was used. Control categories were referenced to understand the type and purpose of each control.
+This project demonstrates an **internal security audit** for the fictional company **Botium Toys**.  
+You will find:
 
-The goal: assess whether Botium Toys has the necessary controls in place.
+* The scenario and audit scope  
+* Links to supporting documents (`.docx`)  
+* My completed **Controls & Compliance Checklist** (tables below)  
+* Actionable recommendations based on the findings  
 
----
-
-## ✅ Controls Assessment Checklist
-
-| Yes | No  | Control                                         | Explanation |
-|-----|-----|--------------------------------------------------|-------------|
-|     | X   | **Least Privilege**                             | All employees can access customer data; access should be restricted to reduce breach risk. |
-| X   |     | **Disaster Recovery Plans**                     | Not yet implemented. Required to ensure business continuity. |
-| X   |     | **Password Policies**                           | Current password requirements are weak, increasing the risk of compromise. |
-| X   |     | **Separation of Duties**                        | Currently, the CEO handles payroll and daily ops—this must be separated. |
-| X   |     | **Firewall**                                    | A firewall is in place with defined rules. |
-|     | X   | **Intrusion Detection System (IDS)**            | Needed to detect potential intrusions. |
-|     | X   | **Backups**                                     | Backups are needed to support business continuity during a breach. |
-| X   |     | **Antivirus Software**                          | Installed and regularly monitored. |
-|     | X   | **Legacy System Maintenance**                   | Legacy systems are monitored but lack a clear maintenance schedule. |
-|     | X   | **Encryption**                                  | Not currently used; critical for confidentiality of sensitive info. |
-|     | X   | **Password Management System**                  | Not in place; would help with secure and efficient password management. |
-| X   |     | **Locks (Physical Security)**                   | Physical locations are secured with locks. |
-| X   |     | **CCTV Surveillance**                           | CCTV installed and functioning. |
-| X   |     | **Fire Detection/Prevention**                   | Fire alarm and prevention systems are in place. |
+Everything is intentionally kept in this `README.md` so reviewers can grasp the project without downloading separate files. The original Word documents are still available for reference.
 
 ---
 
-## 📋 Compliance Checklist
+## 2  Scenario (condensed)
 
-### 🏦 PCI DSS (Payment Card Industry Data Security Standard)
+Botium Toys is a growing U.S. toy manufacturer with one physical location (office + storefront + warehouse) and an expanding worldwide e-commerce presence.  
+The **IT manager**:
 
-| Yes | No  | Best Practice                                      | Explanation |
-|-----|-----|-----------------------------------------------------|-------------|
-|     | X   | Only authorized users access credit card info       | All employees currently have access to internal data. |
-| X   |     | Process and store credit card info securely         | Credit card data is not encrypted and poorly secured. |
-| X   |     | Implement data encryption                           | Encryption is not currently used. |
-| X   |     | Adopt secure password policies                      | No password manager or strong policies in place. |
+1. Adopted the **NIST Cybersecurity Framework (CSF)**  
+2. Defined audit **scope, goals, and assets**  
+3. Performed an initial **risk assessment**  
 
-### 🇪🇺 GDPR (General Data Protection Regulation)
+She now requests an **internal IT audit** to:
 
-| Yes | No  | Best Practice                                      | Explanation |
-|-----|-----|-----------------------------------------------------|-------------|
-|     | X   | EU customer data is secured                        | Encryption is not in use. |
-| X   |     | Data breach notification within 72 hours           | Policy is in place for breach notification. |
-|     | X   | Data properly classified and inventoried           | Assets are inventoried, but not classified. |
-| X   |     | Privacy policies and procedures enforced           | Policies are enforced among teams. |
+* Identify gaps in security controls  
+* Ensure compliance with PCI-DSS (online payments) and GDPR (EU customers)  
+* Estimate potential risks / fines  
 
-### 📊 SOC Type 1 & Type 2 (System and Organization Controls)
-
-| Yes | No  | Best Practice                                      | Explanation |
-|-----|-----|-----------------------------------------------------|-------------|
-|     | X   | User access policies                                | Least Privilege and Separation of Duties are missing. |
-| X   |     | Confidentiality of PII/SPII                         | No encryption to protect PII/SPII. |
-| X   |     | Data integrity is maintained                        | Data integrity practices are followed. |
-|     | X   | Data access is appropriately limited                | All employees have access, not just those authorized. |
+My task: **review her materials → complete a Controls & Compliance Checklist → provide recommendations.**
 
 ---
 
-## 🛠️ Recommendations
+## 3  Supporting Materials (Word documents)
 
-To strengthen Botium Toys’ cybersecurity posture, implement the following:
-
-1. **Least Privilege** – Restrict access to only what employees need.
-2. **Disaster Recovery Plans** – Develop and regularly test them.
-3. **Password Policies** – Enforce stronger password rules.
-4. **Separation of Duties** – Split key roles to prevent fraud.
-5. **Intrusion Detection System (IDS)** – Monitor network threats.
-6. **Legacy System Management** – Schedule routine maintenance.
-7. **Encryption** – Secure sensitive data at rest and in transit.
-8. **Password Management System** – Improve password control and reset efficiency.
+| File | Purpose |
+|------|---------|
+| **[`Botium-Toys-Scope-goals-and-risk-assessment-report.docx`](./Botium-Toys-Scope-goals-and-risk-assessment-report.docx)** | Audit scope, goals, asset list, risk assessment |
+| **[`Control-categories.docx`](./Control-categories.docx)** | Definitions & purposes of control categories |
+| **[`Controls-and-compliance-checklist.docx`](./Controls-and-compliance-checklist.docx)** | Blank template I completed (see tables below) |
+| **[`Internal_Security_Audit_Botium_Toys.docx`](./Internal_Security_Audit_Botium_Toys.docx)** | Narrative write-up of this project |
 
 ---
 
-## 🧠 Skills Demonstrated
+## 4  Controls Assessment Checklist
 
-- Cybersecurity risk assessment
-- Controls evaluation
-- Compliance benchmarking (PCI DSS, GDPR, SOC)
-- Clear documentation & reporting
-- Security recommendations
+| Control | In Place? | Explanation |
+|---------|:--------:|------------|
+| Least Privilege | ❌ | All employees can access customer data; restrict rights to reduce breach risk. |
+| Disaster Recovery Plans | ❌ | No DR plans yet; required for business continuity. |
+| Password Policies | ❌ | Requirements are weak; easier for attackers to compromise accounts. |
+| Separation of Duties | ❌ | CEO handles daily ops *and* payroll – increases fraud risk. |
+| Firewall | ✅ | Blocks traffic using defined rules. |
+| Intrusion Detection System (IDS) | ❌ | Needed to detect potential intrusions. |
+| Backups | ❌ | Critical data backups not in place. |
+| Antivirus Software | ✅ | Installed and regularly monitored. |
+| Legacy-System Monitoring & Maintenance | ❌ | Legacy assets lack a formal schedule and procedures. |
+| Encryption | ❌ | Not used; sensitive data unprotected. |
+| Password Management System | ❌ | Would improve secure password storage and resets. |
+| Physical Locks | ✅ | Offices / storefront / warehouse adequately locked. |
+| CCTV Surveillance | ✅ | CCTV installed and functioning. |
+| Fire Detection / Prevention | ✅ | Fire alarms and sprinklers operational. |
 
 ---
 
-## 🧾 About This Project
+## 5  Compliance Checklists
 
-This work was completed as part of the **Google Cybersecurity Professional Certificate** and demonstrates key cybersecurity competencies such as identifying gaps, analyzing risks, and creating effective recommendations aligned with security frameworks and regulations.
+### 5.1  PCI DSS – Payment Card Industry Data Security Standard
+
+| Best Practice | Adhered? | Explanation |
+|---------------|:-------:|------------|
+| Only authorized users access credit-card data | ❌ | All employees have internal-data access. |
+| Credit-card data processed & stored securely | ✅ | But **not encrypted** – see below. |
+| Data encryption at all touch-points | ❌ | Encryption not implemented. |
+| Secure password management policies | ❌ | Nominal policies; no password manager. |
+
+### 5.2  GDPR – General Data Protection Regulation
+
+| Best Practice | Adhered? | Explanation |
+|---------------|:-------:|------------|
+| EU customer data kept private / secured | ❌ | No encryption applied. |
+| Breach notification within 72 h | ✅ | Plan exists to notify EU customers. |
+| Data classified & inventoried | ❌ | Assets inventoried but not classified. |
+| Privacy policies enforced & documented | ✅ | Policies in place across teams. |
+
+### 5.3  SOC 1 & SOC 2 – System and Organization Controls
+
+| Best Practice | Adhered? | Explanation |
+|---------------|:-------:|------------|
+| User-access policies established | ❌ | Least Privilege & Separation of Duties missing. |
+| Confidentiality of PII / SPII | ❌ | No encryption to protect personal data. |
+| Data integrity (complete / accurate) | ✅ | Integrity checks performed. |
+| Data available only to authorized users | ❌ | Access open to all employees. |
 
 ---
 
-## 🙌 Let's Connect
+## 6  Recommendations (Top 8)
 
-If you're interested in cybersecurity collaboration or feedback, feel free to reach out or explore my other projects!
+1. **Implement Least Privilege** – Limit access strictly to job needs.  
+2. **Create & test Disaster Recovery Plans** – Ensure continuity.  
+3. **Strengthen Password Policies** – Complexity, rotation, MFA.  
+4. **Enforce Separation of Duties** – Split critical financial roles.  
+5. **Deploy an IDS** – Continuous monitoring for intrusions.  
+6. **Schedule Legacy-System Maintenance** – Patch, monitor, document.  
+7. **Encrypt Sensitive Data** – At rest and in transit.  
+8. **Introduce a Password Manager** – Centralized, secure credential storage.
+
+> **Compliance Focus:** Least Privilege, Separation of Duties, and Encryption are pivotal to closing PCI DSS and GDPR gaps.
+
+---
+
+## 7  Reflection Questions (Answered in `Internal_Security_Audit_Botium_Toys.docx`)
+
+1. Which control gaps pose the highest risk?  
+2. How does NIST CSF guide the audit steps?  
+3. Which compliance fines are most severe for Botium Toys?  
+4. How would you prioritize remediation efforts?  
+5. How will you measure success post-implementation?
+
+---
+
+## 8  Skills Demonstrated
+
+* Cybersecurity risk & gap analysis  
+* Mapping controls to compliance standards (PCI DSS, GDPR, SOC)  
+* Application of **NIST CSF** in a small-business context  
+* Written reporting & recommendations  
+
+---
+
+## 9  About the Author
+
+This audit was completed while earning the **Google Cybersecurity Professional Certificate**.  
+Feel free to connect if you’d like to discuss security audits or portfolio feedback!
+
+---
