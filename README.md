@@ -1,141 +1,146 @@
-# 🎯 Botium Toys – Internal Security Audit  
-*A Cybersecurity Portfolio Project (Google Cybersecurity Professional Certificate)*
+# 🛡️ Internal Security Audit – Botium Toys
+
+## 1. Project Overview
+
+This project demonstrates an internal IT security audit for Botium Toys, a fictional U.S.-based toy company experiencing rapid digital growth. As part of a cybersecurity portfolio, this audit assesses existing controls, identifies vulnerabilities, and provides actionable remediation aligned with compliance standards.
 
 ---
 
-## 1  Activity Overview  
+## 2. Scenario Summary
 
-This project demonstrates an **internal security audit** for the fictional company **Botium Toys**.  
-You will find:
+Botium Toys operates from a single physical location, serving as office, store, and warehouse. The company's increasing online presence has raised concerns about their ability to securely scale operations and remain compliant with international regulations (e.g., PCI DSS, GDPR).
 
-* The scenario and audit scope  
-* Links to supporting documents (`.docx`)  
-* My completed **Controls & Compliance Checklist** (tables below)  
-* Actionable recommendations based on the findings  
-
-Everything is intentionally kept in this `README.md` so reviewers can grasp the project without downloading separate files. The original Word documents are still available for reference.
+To address this, the IT manager initiated an internal audit using the NIST Cybersecurity Framework (CSF). This project involves reviewing assets, identifying risks, and completing a controls and compliance checklist to assess the organization's security posture.
 
 ---
 
-## 2  Scenario (condensed)
+## 3. Objectives
 
-Botium Toys is a growing U.S. toy manufacturer with one physical location (office + storefront + warehouse) and an expanding worldwide e-commerce presence.  
-The **IT manager**:
-
-1. Adopted the **NIST Cybersecurity Framework (CSF)**  
-2. Defined audit **scope, goals, and assets**  
-3. Performed an initial **risk assessment**  
-
-She now requests an **internal IT audit** to:
-
-* Identify gaps in security controls  
-* Ensure compliance with PCI-DSS (online payments) and GDPR (EU customers)  
-* Estimate potential risks / fines  
-
-My task: **review her materials → complete a Controls & Compliance Checklist → provide recommendations.**
+- Evaluate the organization’s current security posture
+- Identify control gaps and compliance risks
+- Recommend improvements aligned with NIST CSF
+- Ensure adherence to standards such as PCI DSS, GDPR, and SOC reports
 
 ---
 
-## 3  Supporting Materials (Word documents)
+## 4. Supporting Documents
 
-| File | Purpose |
-|------|---------|
-| **[`Botium-Toys-Scope-goals-and-risk-assessment-report.docx`](./Botium-Toys-Scope-goals-and-risk-assessment-report.docx)** | Audit scope, goals, asset list, risk assessment |
-| **[`Control-categories.docx`](./Control-categories.docx)** | Definitions & purposes of control categories |
-| **[`Controls-and-compliance-checklist.docx`](./Controls-and-compliance-checklist.docx)** | Blank template I completed (see tables below) |
-| **[`Internal_Security_Audit_Botium_Toys.docx`](./Internal_Security_Audit_Botium_Toys.docx)** | Narrative write-up of this project |
+The following files are included in this repository:
 
----
-
-## 4  Controls Assessment Checklist
-
-| Control | In Place? | Explanation |
-|---------|:--------:|------------|
-| Least Privilege | ❌ | All employees can access customer data; restrict rights to reduce breach risk. |
-| Disaster Recovery Plans | ❌ | No DR plans yet; required for business continuity. |
-| Password Policies | ❌ | Requirements are weak; easier for attackers to compromise accounts. |
-| Separation of Duties | ❌ | CEO handles daily ops *and* payroll – increases fraud risk. |
-| Firewall | ✅ | Blocks traffic using defined rules. |
-| Intrusion Detection System (IDS) | ❌ | Needed to detect potential intrusions. |
-| Backups | ❌ | Critical data backups not in place. |
-| Antivirus Software | ✅ | Installed and regularly monitored. |
-| Legacy-System Monitoring & Maintenance | ❌ | Legacy assets lack a formal schedule and procedures. |
-| Encryption | ❌ | Not used; sensitive data unprotected. |
-| Password Management System | ❌ | Would improve secure password storage and resets. |
-| Physical Locks | ✅ | Offices / storefront / warehouse adequately locked. |
-| CCTV Surveillance | ✅ | CCTV installed and functioning. |
-| Fire Detection / Prevention | ✅ | Fire alarms and sprinklers operational. |
+- 📄 `Botium-Toys-Scope-goals-and-risk-assessment-report.docx` – Initial audit scope and risk summary
+- 📄 `Control-categories.docx` – Overview of control domains
+- 📄 `Controls-and-compliance-checklist.docx` – Audit checklist completed by the analyst
+- 📄 `Internal_Security_Audit_Botium_Toys.docx` – Full report with findings and recommendations
 
 ---
 
-## 5  Compliance Checklists
+## 5. Controls and Compliance Summary
 
-### 5.1  PCI DSS – Payment Card Industry Data Security Standard
+### ✅ Key Controls in Place
 
-| Best Practice | Adhered? | Explanation |
-|---------------|:-------:|------------|
-| Only authorized users access credit-card data | ❌ | All employees have internal-data access. |
-| Credit-card data processed & stored securely | ✅ | But **not encrypted** – see below. |
-| Data encryption at all touch-points | ❌ | Encryption not implemented. |
-| Secure password management policies | ❌ | Nominal policies; no password manager. |
+- Antivirus software installed and monitored
+- Physical locks and CCTV security
+- Fire detection/prevention systems
+- Privacy policies enforced
+- Data integrity verified
 
-### 5.2  GDPR – General Data Protection Regulation
+### ❌ Control Gaps Identified
 
-| Best Practice | Adhered? | Explanation |
-|---------------|:-------:|------------|
-| EU customer data kept private / secured | ❌ | No encryption applied. |
-| Breach notification within 72 h | ✅ | Plan exists to notify EU customers. |
-| Data classified & inventoried | ❌ | Assets inventoried but not classified. |
-| Privacy policies enforced & documented | ✅ | Policies in place across teams. |
+- No encryption for customer/payment data
+- All employees have unrestricted system access
+- No password manager or strong password policy
+- No Intrusion Detection System (IDS)
+- No formal disaster recovery plan
 
-### 5.3  SOC 1 & SOC 2 – System and Organization Controls
+### 🛠️ Recommendations
 
-| Best Practice | Adhered? | Explanation |
-|---------------|:-------:|------------|
-| User-access policies established | ❌ | Least Privilege & Separation of Duties missing. |
-| Confidentiality of PII / SPII | ❌ | No encryption to protect personal data. |
-| Data integrity (complete / accurate) | ✅ | Integrity checks performed. |
-| Data available only to authorized users | ❌ | Access open to all employees. |
-
----
-
-## 6  Recommendations (Top 8)
-
-1. **Implement Least Privilege** – Limit access strictly to job needs.  
-2. **Create & test Disaster Recovery Plans** – Ensure continuity.  
-3. **Strengthen Password Policies** – Complexity, rotation, MFA.  
-4. **Enforce Separation of Duties** – Split critical financial roles.  
-5. **Deploy an IDS** – Continuous monitoring for intrusions.  
-6. **Schedule Legacy-System Maintenance** – Patch, monitor, document.  
-7. **Encrypt Sensitive Data** – At rest and in transit.  
-8. **Introduce a Password Manager** – Centralized, secure credential storage.
-
-> **Compliance Focus:** Least Privilege, Separation of Duties, and Encryption are pivotal to closing PCI DSS and GDPR gaps.
+1. Enforce **Least Privilege** access model
+2. Establish a **Disaster Recovery Plan**
+3. Strengthen **Password Policies** and deploy a **Password Manager**
+4. Implement **Encryption** for sensitive data
+5. Deploy an **Intrusion Detection System (IDS)**
+6. Classify and inventory digital assets
+7. Apply **Separation of Duties** to critical processes
 
 ---
 
-## 7  Reflection Questions (Answered in `Internal_Security_Audit_Botium_Toys.docx`)
+## 6. Compliance Assessment Summary
 
-1. Which control gaps pose the highest risk?  
-2. How does NIST CSF guide the audit steps?  
-3. Which compliance fines are most severe for Botium Toys?  
-4. How would you prioritize remediation efforts?  
-5. How will you measure success post-implementation?
-
----
-
-## 8  Skills Demonstrated
-
-* Cybersecurity risk & gap analysis  
-* Mapping controls to compliance standards (PCI DSS, GDPR, SOC)  
-* Application of **NIST CSF** in a small-business context  
-* Written reporting & recommendations  
+| Standard | Compliance Gaps |
+|---------|------------------|
+| **PCI DSS** | No data encryption, all-employee access, weak password practices |
+| **GDPR** | No encryption for EU customer data, asset classification missing |
+| **SOC 1 & 2** | Least Privilege and data confidentiality controls missing |
 
 ---
 
-## 9  About the Author
+## 7. Reflection Questions & Answers
 
-This audit was completed while earning the **Google Cybersecurity Professional Certificate**.  
-Feel free to connect if you’d like to discuss security audits or portfolio feedback!
+### 1. Which control gaps pose the highest risk?
+
+The most critical gaps include:
+- **Lack of encryption** for sensitive customer and payment data
+- **Universal employee access** to all internal systems (no Least Privilege)
+- **Absence of an Intrusion Detection System (IDS)**
+- **Missing disaster recovery plans**  
+These issues could lead to severe breaches, financial losses, and noncompliance penalties.
 
 ---
+
+### 2. How does NIST CSF guide the audit steps?
+
+The NIST Cybersecurity Framework (CSF) provides a clear structure for:
+- **Identifying** assets and risks
+- **Protecting** systems through appropriate controls
+- **Detecting** anomalies (e.g., through IDS)
+- **Responding** to incidents (e.g., breach notification)
+- **Recovering** operations (e.g., via a disaster recovery plan)  
+This audit followed that lifecycle, ensuring a comprehensive security review.
+
+---
+
+### 3. Which compliance fines are most severe for Botium Toys?
+
+**GDPR** penalties are potentially the most severe:
+- Up to €20 million or 4% of global annual revenue  
+This applies because Botium Toys has **EU customers** and fails to secure their data.
+
+**PCI DSS** violations could also result in:
+- Hefty fines from banks/payment processors
+- Possible revocation of credit card processing privileges
+
+---
+
+### 4. How would you prioritize remediation efforts?
+
+1. **Implement Encryption** – Secures both payment and personal data  
+2. **Enforce Least Privilege & Access Controls** – Limits insider risk  
+3. **Deploy an IDS** – Enables real-time threat detection  
+4. **Create Disaster Recovery Plans** – Ensures business continuity  
+5. **Strengthen Password Policies & Use a Password Manager**  
+6. **Classify Assets** – Supports better risk and compliance decisions
+
+---
+
+### 5. How will you measure success post-implementation?
+
+Success can be tracked by:
+- **Reduction in audit findings** in follow-up reviews
+- **Compliance certifications achieved** (e.g., PCI DSS, GDPR readiness)
+- **Fewer security incidents** or breaches over time
+- **System logs confirming IDS activity and access restrictions**
+- **Positive employee feedback** on usability of new security tools (e.g., password manager)
+
+---
+
+## 8. How to Use This Project
+
+This project can be added to a cybersecurity portfolio or used as an example when preparing for audits, job interviews, or compliance consulting.
+
+📁 To view the full audit report: open `Internal_Security_Audit_Botium_Toys.docx`
+
+---
+
+## 9. License
+
+This project is for educational and professional development use only.
