@@ -17,8 +17,6 @@ This repository contains:
 | [**Controls-and-compliance-checklist.docx**](./Controls-and-compliance-checklist.docx) | Blank checklist template |
 | [**Internal_Security_Audit_Botium_Toys.docx**](./Internal_Security_Audit_Botium_Toys.docx) | Full narrative of this project |
 
-Everything is also reproduced below for quick reading.
-
 ---
 
 ## 2&nbsp;&nbsp;Scenario (condensed)
@@ -26,11 +24,11 @@ Everything is also reproduced below for quick reading.
 > Botium Toys’ online growth pressures the IT team to secure systems, keep business running, and comply with PCI DSS (online payments) and GDPR (EU customers).  
 > The manager adopted **NIST CSF**, documented scope/goals/assets, and requested an internal audit to highlight risks and potential fines.
 
-**Your task (completed here):**
+**Task completed in this project:**
 
-1. Review the scope, goals, and risk report.  
-2. Fill out a *Controls & Compliance Checklist* (yes/​no + explanations).  
-3. Provide recommendations to close the gaps.
+1. Reviewed scope, goals, and risk report.  
+2. Completed a Controls & Compliance Checklist.  
+3. Provided recommendations to address control and compliance gaps.
 
 ---
 
@@ -79,45 +77,33 @@ Everything is also reproduced below for quick reading.
 
 | Best Practice | Adhered? | Explanation |
 |---------------|:-------:|------------|
-| User-access policies established | ❌ | Least Privilege not implemented. |
-| PII/SPII confidentiality | ❌ | No encryption safeguards. |
-| Data integrity ensured | ✅ | Validation checks in place. |
-| Data limited to authorized users | ❌ | Access open to all employees. |
+| User-access policies established | ❌ | Least privilege not in place. |
+| Sensitive data is protected | ❌ | No encryption of PII/SPII. |
+| Data integrity maintained | ✅ | Data is consistent and validated. |
+| Authorized data access only | ❌ | All employees have access regardless of role. |
 
 ---
 
-## 5&nbsp;&nbsp;Key Recommendations
+## 5&nbsp;&nbsp;Recommendations Summary
 
-1. **Implement Encryption** for all sensitive data (PCI & GDPR priority).  
-2. **Enforce Least Privilege** and granular access controls.  
-3. **Deploy an IDS** for real-time threat detection.  
-4. **Create & test Disaster-Recovery Plans**.  
-5. **Strengthen Password Policies** and roll out a **Password Manager**.  
-6. **Separate Duties** for critical finance & operations tasks.  
-7. **Schedule Maintenance** and monitoring for legacy systems.  
-8. **Classify Assets** to support risk-based decision-making.
-
----
-
-## 6&nbsp;&nbsp;Reflection (five audit questions)
-
-1. **Highest-risk gaps:** lack of encryption, unrestricted access, no IDS, no DR plans.  
-2. **NIST CSF guidance:** follow Identify → Protect → Detect → Respond → Recover lifecycle.  
-3. **Most severe fines:** GDPR (€20 M / 4 % revenue) and PCI DSS (bank penalties & processing loss).  
-4. **Remediation priority:**  
-   1) Encryption, 2) Least Privilege, 3) IDS, 4) DR plans, 5) Password policy/manager, 6) Asset classification.  
-5. **Measuring success:** fewer audit findings, compliance certifications, reduced incidents, verified IDS logs, positive user feedback on new security tools.
+- **Limit data access** by enforcing least privilege.
+- **Implement encryption** to protect sensitive and regulated data.
+- **Develop disaster recovery plans** to ensure business continuity.
+- **Enforce stronger password policies** and use a password management system.
+- **Separate duties** to prevent fraud and internal misuse.
+- **Classify assets** to align controls with asset value and sensitivity.
+- **Deploy IDS and backup solutions** to improve threat detection and data resilience.
 
 ---
 
-## 7&nbsp;&nbsp;Using This Project
+## 6&nbsp;&nbsp;Project Files
 
-- **Download** the `.docx` reports above for detailed narrative and editable templates.  
-- **Fork** this repo to practice filling out the checklist yourself.  
-- **Share** in your portfolio to showcase audit and compliance skills.
+All `.docx` files included in this repository contain detailed documentation and templates relevant to the internal audit performed.
+
+- View or download from the links above.
 
 ---
 
-## 8&nbsp;&nbsp;License
+## 7&nbsp;&nbsp;License
 
-This repository is provided for educational and professional-portfolio purposes only.
+This repository is intended for **portfolio and documentation purposes**. All content reflects a fictional business scenario created as part of a professional certificate project.
